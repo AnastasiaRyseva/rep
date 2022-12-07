@@ -63,17 +63,6 @@ body {
 .header-burger {
     display: none;
 }
-@media (max-width: 1100px) {
-    .header-burger {
-        display: block;
-        width: 30px;
-        height: 20px;
-        position: relative;
-    }  
-    .header-nav {
-        display: none;
-    }
-}
 .header-burger:before,
 .header-burger:after {
         content: "";
@@ -192,4 +181,30 @@ body {
 .footer img {
     width: 2rem;
     padding-right: .5rem;
+}
+
+@media (max-width: 1100px) {
+    .header-burger {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+    }  
+    .header-nav {
+        display: none;
+    }
+}
+@media (max-width: 630px) {
+    .header-descr > p,
+    .phone {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .header-title {
+        font-size: 1.5rem;
+    }
+    .footer-geo p,
+    .contact a {
+        font-size: 1.5rem;
+    }
 }
